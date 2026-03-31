@@ -16,7 +16,7 @@ int threeSumClosest(vector<int>& nums, int target){
                 best_sum  = sum;
             }
 
-            if(sum == target) return sum;
+            if(sum == target) return sum;nano ~/.bashrc
             else if(sum < target) left++;
             else right--;
         }
