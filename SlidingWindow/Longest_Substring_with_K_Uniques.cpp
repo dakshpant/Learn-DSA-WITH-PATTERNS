@@ -14,7 +14,7 @@ int longestKSunString(string &s, int k){
             mpp[s[low]]--;
             low++;
             if(mpp[s[low-1]]==0){
-                mpp.erase(low-1);
+                mpp.erase(s[low-1]);
             }
         }
         if(mpp.size()==k){
