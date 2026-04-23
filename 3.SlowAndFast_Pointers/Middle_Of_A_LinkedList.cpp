@@ -4,7 +4,7 @@ struct ListNode
 {
     int var;
     ListNode *next;
-    ListNode(int x) : var(x), next(null);
+    ListNode(int x) : var(x), next(NULL) {};
 };
 ListNode *findMiddle(ListNode *head){
     ListNode *slow = head;
@@ -16,5 +16,16 @@ ListNode *findMiddle(ListNode *head){
     return slow;
 }
 int main(){
+    // Create: 1 → 2 → 3 → 4 → 5
+    ListNode* head = new ListNode(1);
+    head->next = new ListNode(2);
+    head->next->next = new ListNode(3);
+    head->next->next->next = new ListNode(4);
+    head->next->next->next->next = new ListNode(5);
+
+    ListNode* mid = findMiddle(head);
+
+    cout << "Middle node value: " << mid->var << endl;
+
     return 0;
 }
