@@ -85,6 +85,17 @@
 
 ---
 
+# 5️⃣ Prefix Sum Pattern
+
+> Prefix Sum helps in solving range sum and cumulative sum problems efficiently by storing running totals.
+
+| # | Problem | Difficulty | LeetCode |
+|---|---|---|---|
+| 1 | Subarray Sum Equals K | Easy | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) |
+| 2 | Find Pivot Index | Easy | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/) |
+
+---
+
 # 🛠️ Languages Used
 
 ```cpp
@@ -111,7 +122,7 @@ C++
 | Sliding Window | 9 |
 | Kadane Pattern | 6 |
 
-### ✅ Total Problems Solved: 28
+### ✅ Total Problems Solved: 31
 
 ---
 
