@@ -18,6 +18,7 @@
 - Fast & Slow Pointers
 - Sliding Window
 - Kadane's Algorithm
+- Prefix Sum
 
 ---
 
@@ -87,12 +88,60 @@
 
 # 5️⃣ Prefix Sum Pattern
 
-> Prefix Sum helps in solving range sum and cumulative sum problems efficiently by storing running totals.
+> Prefix Sum helps in solving cumulative/range sum problems efficiently.
+> Advanced Prefix Sum problems often use HashMaps to store previously seen sums or remainders.
 
 | # | Problem | Difficulty | LeetCode |
 |---|---|---|---|
 | 1 | Subarray Sum Equals K | Easy | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/description/) |
 | 2 | Find Pivot Index | Easy | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/) |
+| 3 | Subarray Sums Divisible By K | Medium | [Subarray Sums Divisible By K](https://leetcode.com/problems/subarray-sums-divisible-by-k/description/) |
+| 4 | Contiguous Array | Medium | [Contiguous Array](https://leetcode.com/problems/contiguous-array/description/) |
+
+---
+
+# 🧠 Prefix Sum Learning Flow
+
+### 1️⃣ Find Pivot Index
+Learn:
+- Running Sum
+- Left Sum vs Right Sum
+- Total Sum usage
+
+### 2️⃣ Subarray Sum Equals K
+Learn:
+- Prefix Sum + HashMap
+- Converting subarray problems into prefix relations
+
+Core idea:
+```cpp
+currentSum - previousSum = k
+```
+
+### 3️⃣ Contiguous Array
+Learn:
+- Transformations in Prefix Sum
+
+Convert:
+```cpp
+0 -> -1
+1 -> +1
+```
+
+Equal 0s and 1s means same prefix sum repeats.
+
+### 4️⃣ Subarray Sums Divisible By K
+Learn:
+- Prefix Modulo Pattern
+- Hashing remainders
+
+Core idea:
+```cpp
+(prefixSum % k)
+```
+
+If two prefix sums have the same remainder,
+their difference is divisible by `k`.
 
 ---
 
@@ -110,6 +159,7 @@ C++
 - Improve problem-solving skills
 - Prepare for coding interviews
 - Build strong algorithmic intuition
+- Understand WHY patterns work instead of memorizing solutions
 
 ---
 
@@ -121,8 +171,9 @@ C++
 | Fast & Slow Pointers | 5 |
 | Sliding Window | 9 |
 | Kadane Pattern | 6 |
+| Prefix Sum | 4 |
 
-### ✅ Total Problems Solved: 31
+### ✅ Total Problems Solved: 35
 
 ---
 
@@ -130,6 +181,8 @@ C++
 
 - Problems are organized pattern-wise for better learning.
 - Solutions focus on optimized approaches.
+- Focus on understanding WHY a pattern works.
+- Prefix Sum problems are heavily connected through transformations and HashMap usage.
 - More patterns and problems will be added continuously.
 
 ---
