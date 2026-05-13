@@ -19,6 +19,7 @@
 - Sliding Window
 - Kadane's Algorithm
 - Prefix Sum
+- Intervals
 
 ---
 
@@ -145,6 +146,69 @@ their difference is divisible by `k`.
 
 ---
 
+# 6️⃣ Intervals Pattern
+
+> Interval problems involve merging, inserting, overlapping, scheduling, and range-based processing.
+
+| # | Problem | Difficulty | LeetCode |
+|---|---|---|---|
+| 1 | Merge Intervals | Medium | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) |
+| 2 | Insert Interval | Medium | [Insert Interval](https://leetcode.com/problems/insert-interval/) |
+| 3 | Non-overlapping Intervals | Medium | [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) |
+| 4 | Meeting Rooms | Easy | [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) |
+| 5 | Meeting Rooms II | Medium | [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) |
+
+---
+
+# 🧠 Intervals Learning Flow
+
+### 1️⃣ Merge Intervals
+Learn:
+- Sorting intervals
+- Detecting overlaps
+- Merging ranges
+
+Core idea:
+```cpp
+if(e1 >= s2)
+```
+
+---
+
+### 2️⃣ Insert Interval
+Learn:
+- Correct insertion position
+- Merge after insertion
+- Edge cases involving empty arrays
+
+Core idea:
+```cpp
+Insert + Merge
+```
+
+---
+
+### 3️⃣ Non-overlapping Intervals
+Learn:
+- Greedy interval removal
+- Choosing optimal ending times
+
+---
+
+### 4️⃣ Meeting Rooms
+Learn:
+- Overlap detection
+- Sorting by start time
+
+---
+
+### 5️⃣ Meeting Rooms II
+Learn:
+- Min Heap / Priority Queue
+- Active interval tracking
+
+---
+
 # 🛠️ Languages Used
 
 ```cpp
@@ -172,8 +236,9 @@ C++
 | Sliding Window | 9 |
 | Kadane Pattern | 6 |
 | Prefix Sum | 4 |
+| Intervals | 2 |
 
-### ✅ Total Problems Solved: 35
+### ✅ Total Problems Solved: 37
 
 ---
 
@@ -183,6 +248,7 @@ C++
 - Solutions focus on optimized approaches.
 - Focus on understanding WHY a pattern works.
 - Prefix Sum problems are heavily connected through transformations and HashMap usage.
+- Interval problems rely heavily on sorting and overlap detection.
 - More patterns and problems will be added continuously.
 
 ---
