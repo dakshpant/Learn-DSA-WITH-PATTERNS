@@ -270,6 +270,116 @@ reuse room, otherwise allocate new room.
 
 ---
 
+---
+
+# 7️⃣ Stack Pattern
+
+> Stack is used when problems require Last-In-First-Out (LIFO) processing, matching pairs, removing adjacent elements, or finding next greater/smaller elements efficiently.
+
+| # | Problem                                  | Difficulty | LeetCode |
+|---|------------------------------------------|------------|----------|
+| 1 | Valid Parentheses                        | Easy       | https://leetcode.com/problems/valid-parentheses/description/ |
+| 2 | Remove All Adjacent Duplicates in String | Easy       | https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/ |
+| 3 | Daily Temperatures                       | Medium     | https://leetcode.com/problems/daily-temperatures/ |
+| 4 | Next Greater Element II                  | Medium     | https://leetcode.com/problems/next-greater-element-ii/description/ |
+| 5 | Remove All Adjacent Duplicates in String II | Medium | https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/ |
+
+---
+
+# 🧠 Stack Learning Flow
+
+### 1️⃣ Valid Parentheses
+
+Learn:
+
+* Stack basics
+* Matching opening and closing brackets
+* LIFO behavior
+
+Core idea:
+
+```cpp
+if(st.top() == matchingBracket)
+```
+
+---
+
+### 2️⃣ Remove All Adjacent Duplicates in String
+
+Learn:
+
+* Character cancellation
+* Simulating removals efficiently
+* Stack as a string builder
+
+Core idea:
+
+```cpp
+if(!st.empty() && st.top() == ch)
+```
+
+---
+
+### 3️⃣ Daily Temperatures
+
+Learn:
+
+* Monotonic Stack
+* Next Greater Element pattern
+* Index tracking
+
+Core idea:
+
+```cpp
+while(!st.empty() && temp[i] > temp[st.top()])
+```
+
+---
+
+### 4️⃣ Next Greater Element II
+
+Learn:
+
+* Circular arrays
+* Monotonic decreasing stack
+* Reusing NGE pattern
+
+Core idea:
+
+```cpp
+for(int i = 2*n - 1; i >= 0; i--)
+```
+
+---
+
+### 5️⃣ Remove All Adjacent Duplicates in String II
+
+Learn:
+
+* Stack with frequency counting
+* Compression techniques
+* Consecutive group removal
+
+Core idea:
+
+```cpp
+stack<pair<char,int>>
+```
+
+---
+
+# 🎯 What You'll Learn From This Pattern
+
+* When to use a Stack instead of loops
+* Monotonic Stack concepts
+* Next Greater / Next Smaller problems
+* Parentheses matching
+* Efficient string manipulation
+* Frequency-based removals
+
+---
+
+
 # 🛠️ Languages Used
 
 ```cpp
@@ -291,15 +401,16 @@ C++
 # 📈 Progress Tracker
 
 | Pattern              | Problems Solved |
-| -------------------- | --------------- |
+|----------------------|-----------------|
 | Two Pointers         | 8               |
 | Fast & Slow Pointers | 5               |
 | Sliding Window       | 9               |
 | Kadane Pattern       | 6               |
 | Prefix Sum           | 4               |
 | Merge Intervals      | 5               |
+| Stack                | 5               |
 
-### ✅ Total Problems Solved: 42
+### ✅ Total Problems Solved: 47
 
 ---
 
@@ -314,6 +425,9 @@ C++
   * Deciding merge behavior
 * Many interval problems become easier after visualizing ranges on a timeline
 * Greedy + Sorting is a very common combination in interval questions
+* Monotonic Stack helps solve many "Next Greater/Smaller" problems in O(n)
+* Stack is useful whenever the most recent element needs to be processed first
+* Many string removal problems can be optimized using Stack instead of repeated scans
 
 ---
 
