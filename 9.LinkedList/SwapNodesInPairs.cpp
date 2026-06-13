@@ -61,7 +61,7 @@ Node *SwapPairs(Node *head)
                 prevLeft->next = left;
 
             if (res == NULL)
-                return left;
+                res = left;
 
             break;
         }
