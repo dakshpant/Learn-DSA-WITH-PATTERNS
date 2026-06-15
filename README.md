@@ -20,6 +20,9 @@
 * Kadane's Algorithm
 * Prefix Sum
 * Merge Intervals
+* Stack
+* Hash Maps
+* In-place Reversal of a LinkedList
 
 ---
 
@@ -90,7 +93,6 @@
 # 5️⃣ Prefix Sum Pattern
 
 > Prefix Sum helps in solving cumulative/range sum problems efficiently.
-> Advanced Prefix Sum problems often use HashMaps to store previously seen sums or remainders.
 
 | # | Problem                      | Difficulty | LeetCode                                                                                                |
 | - | ---------------------------- | ---------- | ------------------------------------------------------------------------------------------------------- |
@@ -98,66 +100,6 @@
 | 2 | Find Pivot Index             | Easy       | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/description/)                         |
 | 3 | Subarray Sums Divisible By K | Medium     | [Subarray Sums Divisible By K](https://leetcode.com/problems/subarray-sums-divisible-by-k/description/) |
 | 4 | Contiguous Array             | Medium     | [Contiguous Array](https://leetcode.com/problems/contiguous-array/description/)                         |
-
----
-
-# 🧠 Prefix Sum Learning Flow
-
-### 1️⃣ Find Pivot Index
-
-Learn:
-
-* Running Sum
-* Left Sum vs Right Sum
-* Total Sum usage
-
-### 2️⃣ Subarray Sum Equals K
-
-Learn:
-
-* Prefix Sum + HashMap
-* Converting subarray problems into prefix relations
-
-Core idea:
-
-```cpp
-currentSum - previousSum = k
-```
-
----
-
-### 3️⃣ Contiguous Array
-
-Learn:
-
-* Transformations in Prefix Sum
-
-Convert:
-
-```cpp
-0 -> -1
-1 -> +1
-```
-
-Equal 0s and 1s means same prefix sum repeats.
-
----
-
-### 4️⃣ Subarray Sums Divisible By K
-
-Learn:
-
-* Prefix Modulo Pattern
-* Hashing remainders
-
-Core idea:
-
-```cpp
-(prefixSum % k)
-```
-
-If two prefix sums have the same remainder,
-their difference is divisible by `k`.
 
 ---
 
@@ -175,210 +117,46 @@ their difference is divisible by `k`.
 
 ---
 
-# 🧠 Merge Intervals Learning Flow
-
-### 1️⃣ Merge Intervals
-
-Learn:
-
-* Sorting intervals
-* Detecting overlaps
-* Merging ranges
-
-Core idea:
-
-```cpp
-if(currentEnd >= nextStart)
-```
-
----
-
-### 2️⃣ Insert Interval
-
-Learn:
-
-* Correct insertion position
-* Merge after insertion
-* Handling edge cases
-
-Core idea:
-
-```cpp
-Insert + Merge
-```
-
----
-
-### 3️⃣ Intervals Intersection
-
-Learn:
-
-* Comparing two interval lists
-* Two pointers on intervals
-* Finding overlapping ranges
-
-Core idea:
-
-```cpp
-start = max(s1, s2)
-end = min(e1, e2)
-```
-
-If:
-
-```cpp
-start <= end
-```
-
-then intersection exists.
-
----
-
-### 4️⃣ Overlapping Intervals
-
-Learn:
-
-* Detecting overlap quickly
-* Sorting by start time
-* Comparing adjacent intervals
-
-Core idea:
-
-```cpp
-if(prevEnd > currentStart)
-```
-
-then intervals overlap.
-
----
-
-### 5️⃣ Minimum Meeting Rooms
-
-Learn:
-
-* Active interval tracking
-* Min Heap / Priority Queue
-* Sweep line style thinking
-
-Core idea:
-
-```cpp
-if(start >= minEnd)
-```
-
-reuse room, otherwise allocate new room.
-
----
-
----
-
 # 7️⃣ Stack Pattern
 
-> Stack is used when problems require Last-In-First-Out (LIFO) processing, matching pairs, removing adjacent elements, or finding next greater/smaller elements efficiently.
+> Stack is used when problems require Last-In-First-Out (LIFO) processing.
 
-| # | Problem                                  | Difficulty | LeetCode |
-|---|------------------------------------------|------------|----------|
-| 1 | Valid Parentheses                        | Easy       | https://leetcode.com/problems/valid-parentheses/description/ |
-| 2 | Remove All Adjacent Duplicates in String | Easy       | https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/ |
-| 3 | Daily Temperatures                       | Medium     | https://leetcode.com/problems/daily-temperatures/ |
-| 4 | Next Greater Element II                  | Medium     | https://leetcode.com/problems/next-greater-element-ii/description/ |
-| 5 | Remove All Adjacent Duplicates in String II | Medium | https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/ |
-
----
-
-# 🧠 Stack Learning Flow
-
-### 1️⃣ Valid Parentheses
-
-Learn:
-
-* Stack basics
-* Matching opening and closing brackets
-* LIFO behavior
-
-Core idea:
-
-```cpp
-if(st.top() == matchingBracket)
-```
+| # | Problem                                     | Difficulty | LeetCode                                                                            |
+| - | ------------------------------------------- | ---------- | ----------------------------------------------------------------------------------- |
+| 1 | Valid Parentheses                           | Easy       | https://leetcode.com/problems/valid-parentheses/description/                        |
+| 2 | Remove All Adjacent Duplicates in String    | Easy       | https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/ |
+| 3 | Daily Temperatures                          | Medium     | https://leetcode.com/problems/daily-temperatures/                                   |
+| 4 | Next Greater Element II                     | Medium     | https://leetcode.com/problems/next-greater-element-ii/description/                  |
+| 5 | Remove All Adjacent Duplicates in String II | Medium     | https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/          |
 
 ---
 
-### 2️⃣ Remove All Adjacent Duplicates in String
+# 8️⃣ Hash Maps Pattern
 
-Learn:
+> Hash Maps help achieve efficient lookups, counting, frequency tracking, and constant-time access.
 
-* Character cancellation
-* Simulating removals efficiently
-* Stack as a string builder
-
-Core idea:
-
-```cpp
-if(!st.empty() && st.top() == ch)
-```
+| # | Problem                       | Difficulty | Link                                                              |
+| - | ----------------------------- | ---------- | ----------------------------------------------------------------- |
+| 1 | First Non-repeating Character | Easy       | https://leetcode.com/problems/first-unique-character-in-a-string/ |
+| 2 | Maximum Number of Balloons    | Easy       | https://leetcode.com/problems/maximum-number-of-balloons/         |
+| 3 | Longest Palindrome            | Easy       | https://leetcode.com/problems/longest-palindrome/                 |
+| 4 | Ransom Note                   | Easy       | https://leetcode.com/problems/ransom-note/                        |
 
 ---
 
-### 3️⃣ Daily Temperatures
+# 9️⃣ In-place Reversal of a LinkedList
 
-Learn:
+> This pattern focuses on reversing links in-place without using extra memory.
 
-* Monotonic Stack
-* Next Greater Element pattern
-* Index tracking
-
-Core idea:
-
-```cpp
-while(!st.empty() && temp[i] > temp[st.top()])
-```
+| # | Problem                          | Difficulty | Link                                                           |
+| - | -------------------------------- | ---------- | -------------------------------------------------------------- |
+| 1 | Reverse a LinkedList             | Easy       | https://leetcode.com/problems/reverse-linked-list/             |
+| 2 | Reverse a Sub-list               | Medium     | https://leetcode.com/problems/reverse-linked-list-ii/          |
+| 3 | Reverse List in Pairs            | Medium     | https://leetcode.com/problems/swap-nodes-in-pairs/description/ |
+| 4 | Reverse every K-element Sub-list | Hard       | https://leetcode.com/problems/reverse-nodes-in-k-group/        |
+| 5 | Rotate a LinkedList              | Medium     | https://leetcode.com/problems/rotate-list/                     |
 
 ---
-
-### 4️⃣ Next Greater Element II
-
-Learn:
-
-* Circular arrays
-* Monotonic decreasing stack
-* Reusing NGE pattern
-
-Core idea:
-
-```cpp
-for(int i = 2*n - 1; i >= 0; i--)
-```
-
----
-
-### 5️⃣ Remove All Adjacent Duplicates in String II
-
-Learn:
-
-* Stack with frequency counting
-* Compression techniques
-* Consecutive group removal
-
-Core idea:
-
-```cpp
-stack<pair<char,int>>
-```
-
----
-
-# 🎯 What You'll Learn From This Pattern
-
-* When to use a Stack instead of loops
-* Monotonic Stack concepts
-* Next Greater / Next Smaller problems
-* Parentheses matching
-* Efficient string manipulation
-* Frequency-based removals
-
----
-
 
 # 🛠️ Languages Used
 
@@ -400,34 +178,19 @@ C++
 
 # 📈 Progress Tracker
 
-| Pattern              | Problems Solved |
-|----------------------|-----------------|
-| Two Pointers         | 8               |
-| Fast & Slow Pointers | 5               |
-| Sliding Window       | 9               |
-| Kadane Pattern       | 6               |
-| Prefix Sum           | 4               |
-| Merge Intervals      | 5               |
-| Stack                | 5               |
+| Pattern                         | Problems Solved |
+| ------------------------------- | --------------- |
+| Two Pointers                    | 8               |
+| Fast & Slow Pointers            | 5               |
+| Sliding Window                  | 9               |
+| Kadane Pattern                  | 6               |
+| Prefix Sum                      | 4               |
+| Merge Intervals                 | 5               |
+| Stack                           | 5               |
+| Hash Maps                       | 4               |
+| In-place Reversal of LinkedList | 5               |
 
-### ✅ Total Problems Solved: 47
-
----
-
-# 🌟 What I’m Learning
-
-* Patterns matter more than memorizing problems
-* Prefix Sum is really about transforming subarray relationships
-* Merge Intervals problems are mostly:
-
-  * Sorting
-  * Detecting overlap
-  * Deciding merge behavior
-* Many interval problems become easier after visualizing ranges on a timeline
-* Greedy + Sorting is a very common combination in interval questions
-* Monotonic Stack helps solve many "Next Greater/Smaller" problems in O(n)
-* Stack is useful whenever the most recent element needs to be processed first
-* Many string removal problems can be optimized using Stack instead of repeated scans
+### ✅ Total Problems Solved: 51
 
 ---
 
@@ -436,8 +199,6 @@ C++
 * Problems are organized pattern-wise for better learning.
 * Solutions focus on optimized approaches.
 * Focus on understanding WHY a pattern works.
-* Prefix Sum problems are heavily connected through transformations and HashMap usage.
-* Interval problems rely heavily on sorting and overlap detection.
 * More patterns and problems will be added continuously.
 
 ---
@@ -447,5 +208,3 @@ C++
 ## 🌟 Happy Coding!
 
 </div>
-
-Source file: 
