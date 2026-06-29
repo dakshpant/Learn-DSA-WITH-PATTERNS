@@ -10,8 +10,8 @@ bool searchMatrix(vector<vector<int>> &matrix, int target)
     while (low <= high)
     {
         int guess = (low + high) / 2;
-        int row = guess / m;
-        int col = guess % m;
+        int row = guess / m; //calculated the formula to fing the col
+        int col = guess % m;//formula to find the row
         if (matrix[row][col] == target)
             return true;
         if (matrix[row][col] < target)
