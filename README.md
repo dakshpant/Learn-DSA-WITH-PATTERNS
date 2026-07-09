@@ -184,6 +184,27 @@
 
 ---
 
+# 1️⃣1️⃣ Heap Pattern
+
+> The Heap (Priority Queue) pattern is used when we need efficient access to the minimum or maximum element dynamically.
+> It is widely used in Top-K problems, frequency-based problems, merging sorted structures, scheduling, and greedy optimization.
+
+| #   | Problem                         | Difficulty | Link                                                           |
+| --- | ------------------------------- | ---------- | -------------------------------------------------------------- |
+| 1   | Kth Smallest Element            | Medium     | https://leetcode.com/problems/kth-largest-element-in-a-stream/ |
+| 2   | Kth Largest Element in an Array | Medium     | https://leetcode.com/problems/kth-largest-element-in-an-array/ |
+| 3   | Top K Frequent Elements         | Medium     | https://leetcode.com/problems/top-k-frequent-elements/         |
+| 4   | Top K Frequent Words            | Medium     | https://leetcode.com/problems/top-k-frequent-words/            |
+| 5   | K Closest Points to Origin      | Medium     | https://leetcode.com/problems/k-closest-points-to-origin/      |
+| 6   | Merge K Sorted Arrays           | Medium     | https://www.geeksforgeeks.org/problems/merge-k-sorted-arrays/1 |
+| 7   | Merge K Sorted Lists            | Hard       | https://leetcode.com/problems/merge-k-sorted-lists/            |
+| 8   | Last Stone Weight               | Easy       | https://leetcode.com/problems/last-stone-weight/               |
+| 9   | Task Scheduler                  | Medium     | https://leetcode.com/problems/task-scheduler/                  |
+| 10  | Reorganize String               | Medium     | https://leetcode.com/problems/reorganize-string/               |
+| 11  | IPO                             | Hard       | https://leetcode.com/problems/ipo/                             |
+
+---
+
 # 🛠️ Languages Used
 
 ```cpp
@@ -216,8 +237,9 @@ C++
 | Hash Maps                       | 4               |
 | In-place Reversal of LinkedList | 5               |
 | Binary Search                   | 14              |
+| Heap                            | 11              |
 
-### ✅ Total Problems Solved: 65
+### ✅ Total Problems Solved: 76
 
 ---
 
