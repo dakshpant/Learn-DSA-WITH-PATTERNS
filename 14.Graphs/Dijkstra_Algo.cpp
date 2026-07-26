@@ -5,7 +5,7 @@
 #include <vector>
 using namespace std;
 vector<int> dijkstra(int n, vector<vector<int>> &edges, int src) {
-  vector<vector<pair<int, int>>> adj(n);
+  vector<vector<pair<int, int>>> adj(n); 
   for (int i = 0; i < edges.size(); i++) {
     int s = edges[i][0];
     int d = edges[i][1];
