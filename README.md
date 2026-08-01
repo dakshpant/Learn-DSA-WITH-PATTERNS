@@ -205,6 +205,86 @@
 
 ---
 
+---
+
+# 1️⃣2️⃣ Recursion & Backtracking Pattern
+
+> Recursion solves problems by breaking them into smaller subproblems. Backtracking explores all possible choices while undoing previous decisions when necessary.
+
+| #   | Problem                               | Difficulty | Link                                                                                       |
+| --- | ------------------------------------- | ---------- | ------------------------------------------------------------------------------------------ |
+| 1   | Fibonacci Number                      | Easy       | https://leetcode.com/problems/fibonacci-number/description/                                |
+| 2   | Check if String is Palindrome         | Easy       | https://www.geeksforgeeks.org/problems/palindrome-string0817/1                             |
+| 3   | Check if Array is Sorted              | Easy       | https://www.geeksforgeeks.org/problems/check-if-an-array-is-sorted0701/1                   |
+| 4   | Sum of Digits of a Number             | Easy       | https://www.geeksforgeeks.org/problems/sum-of-digits1742/1                                 |
+| 5   | Remove All Occurrences of a Character | Easy       | https://www.geeksforgeeks.org/problems/remove-all-occurrences-of-a-character-in-a-string/1 |
+| 6   | Generate Parentheses                  | Medium     | https://leetcode.com/problems/generate-parentheses/description/                            |
+| 7   | Letter Combinations of a Phone Number | Medium     | https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/           |
+| 8   | Combination Sum                       | Medium     | https://leetcode.com/problems/combination-sum/description/                                 |
+
+---
+
+# 1️⃣3️⃣ Tree Pattern
+
+> Tree problems involve traversal, recursion, searching, validation, construction, and path-based computations.
+
+| #   | Problem                                                 | Difficulty | Link                                                                                                 |
+| --- | ------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------- |
+| 1   | Binary Tree Inorder Traversal                           | Easy       | https://leetcode.com/problems/binary-tree-inorder-traversal/description/                             |
+| 2   | Binary Tree Preorder Traversal                          | Easy       | https://leetcode.com/problems/binary-tree-preorder-traversal/description/                            |
+| 3   | Binary Tree Postorder Traversal                         | Easy       | https://leetcode.com/problems/binary-tree-postorder-traversal/description/                           |
+| 4   | Binary Tree Level Order Traversal                       | Medium     | https://leetcode.com/problems/binary-tree-level-order-traversal/description/                         |
+| 5   | Binary Tree Zigzag Level Order Traversal                | Medium     | https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/                  |
+| 6   | Binary Tree Level Order Traversal II                    | Medium     | https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/                      |
+| 7   | Invert Binary Tree                                      | Easy       | https://leetcode.com/problems/invert-binary-tree/description/                                        |
+| 8   | Symmetric Tree                                          | Easy       | https://leetcode.com/problems/symmetric-tree/description/                                            |
+| 9   | Same Tree                                               | Easy       | https://leetcode.com/problems/same-tree/description/                                                 |
+| 10  | Lowest Common Ancestor of Binary Tree                   | Medium     | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/                   |
+| 11  | Search in a Binary Search Tree                          | Easy       | https://leetcode.com/problems/search-in-a-binary-search-tree/                                        |
+| 12  | Lowest Common Ancestor of BST                           | Medium     | https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/            |
+| 13  | Two Sum IV - Input is a BST                             | Easy       | https://leetcode.com/problems/two-sum-iv-input-is-a-bst/description/                                 |
+| 14  | Diameter of Binary Tree                                 | Easy       | https://leetcode.com/problems/diameter-of-binary-tree/description/                                   |
+| 15  | Check Completeness of a Binary Tree                     | Medium     | https://leetcode.com/problems/check-completeness-of-a-binary-tree/description/                       |
+| 16  | Validate Binary Search Tree                             | Medium     | https://leetcode.com/problems/validate-binary-search-tree/description/                               |
+| 17  | Recover Binary Search Tree                              | Hard       | https://leetcode.com/problems/recover-binary-search-tree/description/                                |
+| 18  | Path Sum                                                | Easy       | https://leetcode.com/problems/path-sum/description/                                                  |
+| 19  | Path Sum II                                             | Medium     | https://leetcode.com/problems/path-sum-ii/description/                                               |
+| 20  | Sum Root to Leaf Numbers                                | Medium     | https://leetcode.com/problems/sum-root-to-leaf-numbers/description/                                  |
+| 21  | Construct Binary Tree from Preorder & Inorder Traversal | Medium     | https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/ |
+
+---
+
+# 1️⃣4️⃣ Graph Pattern
+
+> Graph problems cover traversal, shortest paths, connectivity, topological sorting, spanning trees, and graph-based BFS/DFS.
+
+| #   | Problem                             | Difficulty | Link                                                                                            |
+| --- | ----------------------------------- | ---------- | ----------------------------------------------------------------------------------------------- |
+| 1   | Construct Adjacency List from Edges | Easy       | https://www.geeksforgeeks.org/problems/print-adjacency-list-1587115620/1                        |
+| 2   | Graph DFS                           | Easy       | https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1                      |
+| 3   | Graph BFS                           | Easy       | https://www.geeksforgeeks.org/problems/bfs-traversal-of-graph/1                                 |
+| 4   | Number of Islands                   | Medium     | https://leetcode.com/problems/number-of-islands/description/                                    |
+| 5   | Number of Provinces                 | Medium     | https://leetcode.com/problems/number-of-provinces/description/                                  |
+| 6   | Rotten Oranges                      | Medium     | https://leetcode.com/problems/rotting-oranges/                                                  |
+| 7   | Detect Cycle in Undirected Graph    | Medium     | https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1                    |
+| 8   | Detect Cycle in Directed Graph      | Medium     | https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1                       |
+| 9   | Topological Sort (Kahn's Algorithm) | Medium     | https://www.geeksforgeeks.org/problems/topological-sort/1                                       |
+| 10  | Is Graph Bipartite                  | Medium     | https://leetcode.com/problems/is-graph-bipartite/                                               |
+| 11  | Surrounded Regions                  | Medium     | https://leetcode.com/problems/surrounded-regions/                                               |
+| 12  | Shortest Path in Unweighted Graph   | Medium     | https://www.geeksforgeeks.org/problems/shortest-path-in-undirected-graph-having-unit-distance/1 |
+| 13  | Dijkstra's Algorithm                | Medium     | https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1           |
+| 14  | Network Delay Time                  | Medium     | https://leetcode.com/problems/network-delay-time/                                               |
+| 15  | Path With Minimum Effort            | Medium     | https://leetcode.com/problems/path-with-minimum-effort/                                         |
+| 16  | Swim in Rising Water                | Hard       | https://leetcode.com/problems/swim-in-rising-water/                                             |
+| 17  | Bellman-Ford Algorithm              | Medium     | https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1        |
+| 18  | Cheapest Flights Within K Stops     | Medium     | https://leetcode.com/problems/cheapest-flights-within-k-stops/description/                      |
+| 19  | Prim's Minimum Spanning Tree        | Medium     | https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1                                  |
+| 20  | Word Ladder                         | Hard       | https://leetcode.com/problems/word-ladder/                                                      |
+
+---
+
+---
+
 # 🛠️ Languages Used
 
 ```cpp
@@ -238,16 +318,19 @@ C++
 | In-place Reversal of LinkedList | 5               |
 | Binary Search                   | 14              |
 | Heap                            | 11              |
+| Recursion & Backtracking        | 8               |
+| Trees                           | 21              |
+| Graphs                          | 20              |
 
-### ✅ Total Problems Solved: 76
+### ✅ Total Problems Solved: 125
 
 ---
 
 # 🔜 Up Next
 
-## 1️⃣1️⃣ Heap Pattern
+## 1️⃣5️⃣ DP{Dynamic Programming}
 
-> The Heap (Priority Queue) pattern is used to efficiently retrieve the smallest or largest element while dynamically maintaining order. It is one of the most common patterns for Top-K, scheduling, merging, and optimization problems.
+> Dynamic Programming is a powerful technique for solving complex problems by breaking them down into subproblems and storing their solutions to reuse them later.
 
 🚧 Coming Soon...
 
